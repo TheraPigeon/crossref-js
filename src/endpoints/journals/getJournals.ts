@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://api.crossref.org/';
-const ENDPOINT = '/journals';
+const ENDPOINT = 'journals/';
 
 // Return a list of journals in the Crossref database.
 export const getJournals = async  () => {
