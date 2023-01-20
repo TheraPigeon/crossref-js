@@ -16,7 +16,18 @@ export const createParams = (config?: RequestConfig): string => {
   entries.forEach(([key, val], i) => {
     params += key;
     params += '=';
-    params += `${val}`;
+
+    if (Array.isArray(val)) {
+      val.forEach((item, index) => {
+        params += item;
+
+        if (index < val.length - 1) {
+          params += ','
+        }
+      });
+    } else {
+      params += `${val}`;
+    }
 
     if (i < entries.length - 1) {
       params += '&';
