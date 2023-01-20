@@ -1,0 +1,44 @@
+{
+  "name": "@therapigeon/crossref-js",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "author": "therapigeon",
+  "license": "MIT",
+  "type": "commonjs",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "example": "example",
+    "test": "test"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf lib",
+    "format": "sort-package-json && prettier --write '**/*.{ts,js,json,yml,md}' && eslint --fix .",
+    "lint": "eslint . && ec .",
+    "prepare": "husky install",
+    "release:major": "npm version major --no-commit-hooks && git push --follow-tags",
+    "release:minor": "npm version minor --no-commit-hooks && git push --follow-tags",
+    "release:patch": "npm version patch --no-commit-hooks && git push --follow-tags",
+    "test": "npm run build && jest"
+  },
+  "devDependencies": {
+    "@jessety/eslint-config": "^2.4.0",
+    "@jessety/prettier-config": "^1.2.0",
+    "@types/jest": "^29.2.6",
+    "@types/node": "^18.11.18",
+    "editorconfig-checker": "^5.0.1",
+    "eslint": "^8.32.0",
+    "husky": "^8.0.3",
+    "jest": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "rimraf": "^4.1.1",
+    "sort-package-json": "^2.1.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.4"
+  }
+}
