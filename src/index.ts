@@ -1,1 +1,1 @@
-// export the CrossRef API object here
+export * from './endpoints';
