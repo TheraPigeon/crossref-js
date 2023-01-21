@@ -4,9 +4,15 @@ export interface FundersMessage {
   status: string,
   'message-type':	string,
   'message-version': string,
-  message:	Funders[],
+  message:	Funders,
 }
 
+export interface FunderMessage {
+  status:	string,
+  'message-type':	string,
+  'message-version':	string,
+  message:	FunderFull,
+}
 
 export interface Funders {
   'items-per-page':	number,
@@ -24,4 +30,20 @@ export interface Funder {
   replaces: string[],
   'replaced-by':	string[],
   tokens:	string[],
+}
+
+export interface FunderFull {
+  'hierarchy-names': any,
+  'replaced-by':	string[],
+  'work-count':	number,
+  name:	string,
+  descendants:	string[],
+  'descendant-work-count': number,
+  id:	string,
+  tokens: string[],
+  replaces:	string[],
+  uri: string,
+  hierarchy: any,
+  'alt-names': string[],
+  location:	string,
 }
