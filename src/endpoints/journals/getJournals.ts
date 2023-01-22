@@ -9,7 +9,7 @@ export const getJournals = async (config?: Omit<RequestConfig, 'sort'>) => {
   try {
     const { BASE_URL, JOURNALS } = endpoints;
     const params = createParams(config);
-    const url = BASE_URL + JOURNALS + params;
+    const url = `${BASE_URL}${JOURNALS}${params}`;
     const result: AxiosResponse<JournalsMessage> = await axios.get(url);
 
     return result.data;
