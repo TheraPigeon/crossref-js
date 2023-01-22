@@ -18,13 +18,8 @@ export const createParams = (config?: RequestConfig): string => {
     params += '=';
 
     if (Array.isArray(val)) {
-      val.forEach((item, index) => {
-        params += item;
-
-        if (index < val.length - 1) {
-          params += ','
-        }
-      });
+      const joinedVal = val.join(',');
+      params += joinedVal;
     } else {
       params += `${val}`;
     }
