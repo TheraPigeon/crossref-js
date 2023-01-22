@@ -5,7 +5,10 @@ import { createParams } from '../../utils/createParams';
 import { WorksMessage } from '../works/types';
 
 // Returns list of works associated with the specified funder {id}.
-export const getWorksByFunderId = async (id: number, config?: RequestConfig) => {
+export const getWorksByFunderId = async (
+  id: number,
+  config?: RequestConfig,
+) => {
   try {
     const { BASE_URL, FUNDERS, WORKS } = endpoints;
     const params = createParams(config);
