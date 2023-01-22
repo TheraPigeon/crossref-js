@@ -1,3 +1,4 @@
+import { Flags } from '../../types/Flags';
 import { Query } from '../../types/Query';
 import { ResponseMessage } from '../../types/ResponseMessage';
 
@@ -15,7 +16,7 @@ export interface Member {
   token: string[];
   'counts-type': MembersMessageMessageItemsCountsType;
   'coverage-type': MembersMessageMessageItemsCoverageType;
-  flags: any;
+  flags: Flags;
   location: string;
   names: string[];
 }
