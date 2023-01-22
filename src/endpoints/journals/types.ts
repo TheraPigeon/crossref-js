@@ -2,6 +2,7 @@ import { Query } from '../../types/Query';
 import { ResponseMessage } from '../../types/ResponseMessage';
 
 export type JournalMessage = ResponseMessage<Journal>;
+export type JournalsMessage = ResponseMessage<Journals>;
 
 export interface JournalIssnType {
   value: string;
