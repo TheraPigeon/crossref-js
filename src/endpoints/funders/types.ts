@@ -1,18 +1,8 @@
 import { Query } from "../../types/Query"
+import { ResponseMessage } from "../../types/ResponseMessage"
 
-export interface FundersMessage {
-  status: string,
-  'message-type':	string,
-  'message-version': string,
-  message:	Funders,
-}
-
-export interface FunderMessage {
-  status:	string,
-  'message-type':	string,
-  'message-version':	string,
-  message:	FunderFull,
-}
+export type FundersMessage = ResponseMessage<Funders>
+export type FunderMessage = ResponseMessage<FunderFull>;
 
 export interface Funders {
   'items-per-page':	number,
