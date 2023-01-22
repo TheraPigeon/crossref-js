@@ -12,7 +12,7 @@ export const getJournalByISSN = async (
   try {
     const { BASE_URL, JOURNALS } = endpoints;
     const params = createParams(config);
-    const url = `${BASE_URL + JOURNALS}${id}/${params}`;
+    const url = `${BASE_URL}${JOURNALS}${id}/${params}`;
     const result: AxiosResponse<JournalMessage> = await axios.get(url);
 
     return result.data;
