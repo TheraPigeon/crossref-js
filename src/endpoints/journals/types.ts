@@ -1,3 +1,4 @@
+import { DoiCounts } from '../../types/DoiCounts';
 import { Flags } from '../../types/Flags';
 import { Query } from '../../types/Query';
 import { ResponseMessage } from '../../types/ResponseMessage';
@@ -61,12 +62,6 @@ export interface CoverageFull {
 
 export interface JournalsMessageMessageItemsBreakdowns {
   'dois-by-issued-year': number[];
-}
-
-export interface DoiCounts {
-  'total-dois': number;
-  'current-dois': number;
-  'backfile-dois': number;
 }
 
 export interface Journal {

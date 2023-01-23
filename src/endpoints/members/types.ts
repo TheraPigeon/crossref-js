@@ -1,3 +1,4 @@
+import { DoiCounts } from '../../types/DoiCounts';
 import { Flags } from '../../types/Flags';
 import { Query } from '../../types/Query';
 import { ResponseMessage } from '../../types/ResponseMessage';
@@ -26,12 +27,6 @@ export interface Members {
   query: Query;
   'total-results': number;
   items: Member[];
-}
-
-export interface DoiCounts {
-  'total-dois': number;
-  'current-dois': number;
-  'backfile-dois': number;
 }
 
 export interface MembersMessageMessageItemsBreakdowns {
