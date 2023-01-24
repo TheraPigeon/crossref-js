@@ -5,6 +5,17 @@ import { Reference } from '../../types/Reference';
 import { ResponseMessage } from '../../types/ResponseMessage';
 
 export type WorksMessage = ResponseMessage<Works>;
+export type AgencyMessage = ResponseMessage<DoiAgency>;
+
+export interface DoiAgency {
+  DOI: string; // The DOI identifier associated with the work
+  agency: Agency;
+}
+
+export interface Agency {
+  id: string;
+  label: string;
+}
 
 export interface Works {
   'items-per-page': number;
