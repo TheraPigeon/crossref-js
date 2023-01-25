@@ -6,3 +6,4 @@ export const MEMBERS = 'members/';
 export const AGENCY = 'agency/';
 export const LICENSES = 'licenses/';
 export const PREFIXES = 'prefixes/';
+export const TYPES = 'types/';
