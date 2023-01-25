@@ -4,6 +4,4 @@ export const FUNDERS = 'funders/';
 export const WORKS = 'works/';
 export const MEMBERS = 'members/';
 export const AGENCY = 'agency/';
-
-
-
+export const TYPES = 'types/';
