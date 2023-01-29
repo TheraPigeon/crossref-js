@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
 import { endpoints } from '../../constants';
 import { RequestConfig } from '../../types/RequestConfig';
-import { WorksMessage } from '../works/types';
 import { createParams } from '../../utils/createParams';
+import { WorksMessage } from '../works/types';
 
 // Returns list of works associated with a Crossref member (deposited by a Crossref member) with {id}.
 export const getMemberWorksById = async (
