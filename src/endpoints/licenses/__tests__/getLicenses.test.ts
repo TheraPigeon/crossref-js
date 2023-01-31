@@ -1,4 +1,4 @@
-import { getLicenses } from '../getLicense';
+import { getLicenses } from '../getLicenses';
 
 describe('GetLicenses method', () => {
   describe('data', () => {
