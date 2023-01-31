@@ -5,7 +5,7 @@ describe('getWorksByDoi method', () => {
   describe('data', () => {
     it('returns metadata when provided a valid DOI', async () => {
       const data = await getWorksByDoi(worksDoi);
-      expect(data).toBeNull();
+      expect(data).not.toBeNull();
     });
   });
 });

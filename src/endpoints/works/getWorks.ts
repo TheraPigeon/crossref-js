@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
+import { WorksMessage } from './types';
 import { endpoints } from '../../constants';
 import { RequestConfig } from '../../types/RequestConfig';
 import { createParams } from '../../utils/createParams';
-import { WorksMessage } from './types';
 
 // Returns a list of all works (journal articles, conference proceedings, books, components, etc), 20 per page.
 export const getWorks = async (config?: RequestConfig) => {

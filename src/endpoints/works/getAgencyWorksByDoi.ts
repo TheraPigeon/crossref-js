@@ -11,7 +11,7 @@ export const getAgencyWorksByDoi = async (
 ) => {
   const { BASE_URL, WORKS, AGENCY } = endpoints;
   const params = createParams(config);
-  const url = `${BASE_URL}${WORKS}${doi}${AGENCY}${params}`;
+  const url = `${BASE_URL}${WORKS}${doi}/${AGENCY}${params}`;
   const result: AxiosResponse<AgencyMessage> = await axios.get(url);
 
   return result.data;
