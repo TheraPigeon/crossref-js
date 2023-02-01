@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
+import { LicensesMessage } from './types';
 import { endpoints } from '../../constants';
 import { RequestConfig } from '../../types/RequestConfig';
 import { createParams } from '../../utils/createParams';
-import { LicensesMessage } from './types';
 
 // Returns a list of licenses
 export const getLicenses = async (config?: RequestConfig) => {
