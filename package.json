@@ -1,5 +1,5 @@
 {
-  "name": "@therapigeon/crossref-js",
+  "name": "crossref-js",
   "version": "0.0.2",
   "main": "./lib/index.js",
   "author": "therapigeon",
